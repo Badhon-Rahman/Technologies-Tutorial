@@ -84,8 +84,8 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Stable Features</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Latest Features</a></li>
 					
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>Hook</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Introduction to Hook</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
 			    </ul>
@@ -599,15 +599,32 @@
 			    
 			    <article class="docs-article" id="section-9">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">FAQs</h1>
+					    <h1 class="docs-heading">Hook</h1>
 					    <section class="docs-intro">
-						    <p>Section intro goes here. You can list all your FAQs using the format below.</p>
+						    <p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.</p>
 						</section><!--//docs-intro-->
 				    </header>
 				     <section class="docs-section" id="item-9-1">
+						
 						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
+						<div class="docs-code-block">
+							<pre class="shadow-lg rounded"><code class="json hljs">
+									<span class="hljs-attr">import React, { useState } from 'react';</span>
+									<span class="hljs-attr">function Example() {</span>
+									<span class="hljs-attr">// Declare a new state variable, which we'll call "count"</span>
+									<span class="hljs-attr">const [count, setCount] = useState(0);</span>,
+									<span class="hljs-attr">return (</span>
+									<span class="hljs-attr"><div>
+									  <p>You clicked {count} times</p>
+									  <button onClick={() => setCount(count + 1)}>
+										Click me
+									  </button>
+								</div></span
+							</code></pre>
+							 
+						</div>
 						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+						<p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.</p>
 						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
 						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
 						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
@@ -641,15 +658,7 @@
 
 			    <footer class="footer">
 				    <div class="container text-center py-5">
-				        <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
-				        <ul class="social-list list-unstyled pt-4 mb-0">
-						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
-				        </ul><!--//social-list-->
+				      
 				    </div>
 			    </footer>
 		    </div> 
