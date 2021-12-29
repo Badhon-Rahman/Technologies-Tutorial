@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>ReactJS</title>
+    <title>MySQL</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
@@ -37,7 +37,7 @@
 	                    <span></span>
 	                    <span></span>
 	                </button>
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><span>Documentation </span><span class="logo-text">React<span class="text-alt">JS</span></span></a></div>    
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><span>Documentation </span><span class="logo-text">My<span class="text-alt">SQL</span></span></a></div>    
                 </div>
             </div><!--//container-->
         </div><!--//branding-->
@@ -85,7 +85,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Latest Features</a></li>
 					
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Find n max value</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li>
 			    </ul>
@@ -599,15 +599,15 @@
 			    
 			    <article class="docs-article" id="section-9">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">FAQs</h1>
+					    <h1 class="docs-heading">Advance Queries</h1>
 					    <section class="docs-intro">
 						    <p>Section intro goes here. You can list all your FAQs using the format below.</p>
 						</section><!--//docs-intro-->
 				    </header>
 				     <section class="docs-section" id="item-9-1">
-						<h2 class="section-heading">Section Item 9.1 <small>(FAQ Category One)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>What's sit amet quam eget lacinia?</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+						<h2 class="section-heading">Find values<small>(query)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Get N number max value</h5>
+						<p>SELECT Price as pN FROM (select Price from Products order by Price desc limit n) Products order by Price limit 1; <br>or<br>SELECT Price as p10th FROM Products order by Price desc limit 1 offset 9; </p>
 						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>How to ipsum dolor sit amet quam tortor?</h5>
 						<p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. </p>
 						<h5 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I  bibendum sodales?</h5>
